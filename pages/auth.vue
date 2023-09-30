@@ -60,7 +60,7 @@ export default {
   try {
     this.processing = true;
 
-    const { user, session, error } = await supabase.auth.signIn({
+    const { user, session, error } = await supabase.auth.signUp({
       email: this.username,
       password: this.password,
     });

@@ -1,7 +1,7 @@
 <template>
   
   <div class="flex flex-col bg-williamgreen min-h-screen">
-    <Navbar />
+    <NavBar />
 
     <div class="container mx-auto py-10">
       <h1 class="text-3xl font-bold font-orelega text-center text-periwinklegrey mb-6 pb-2">Meditation Classes</h1>
@@ -23,7 +23,7 @@
           <h2 class="text-lg font-semibold text-gray-800">Peaceful Meditation Environment</h2>
           <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <Button class="mt-4 bg-tiber text-greysuit py-2 px-4 rounded hover:bg-black hover:text-white" href="/meditations/page2">Details</Button>
-        </div>
+        </div>  
 
         <!-- Meditation Card 3 -->
         <div class="bg-greysuit rounded-lg shadow-md p-4">
@@ -81,13 +81,7 @@
 </template>
 
 <script>
-import Navbar from '~/components/NavBar.vue';
 
-export default {
-  components: {
-    Navbar,
-  },
-};
 </script>
 
 <style scoped>

@@ -6,14 +6,14 @@ export default defineNuxtConfig({
 
   supabase: {
     redirectOptions: {
-      login: '/',
+      login: '/auth',
       callback: '/members',
       exclude: [
         '/muscle',
         '/calorie',
         '/meditation',
         '/workouts',
-        '/auth',
+        '/',
         '/meditations/page1', '/meditations/page2', '/meditations/page3', '/meditations/page4', '/meditations/page5', '/meditations/page6', '/meditations/page7', '/meditations/page8',
       ],
     }  
