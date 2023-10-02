@@ -1,88 +1,105 @@
 <template>
-  
   <div class="flex flex-col bg-williamgreen min-h-screen">
     <NavBar />
 
     <div class="container mx-auto py-10">
-      <h1 class="text-3xl font-bold font-orelega text-center text-periwinklegrey mb-6 pb-2">Meditation Classes</h1>
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold font-orelega text-center text-periwinklegrey mb-6 pb-2">Meditation Classes</h1>
 
       <!-- Meditation Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
         <!-- Meditation Card 1 -->
-        <div class="bg-greysuit rounded-lg shadow-md p-4">
-          <img src="@/assets/images/meditation/meditationonetwo.jpg" alt="Meditation Class 1" class="w-full h-32 object-cover rounded-md mb-3" />
-          <h2 class="text-lg font-semibold text-gray-800">Getting Started with Meditation</h2>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button class="mt-4 bg-tiber text-greysuit py-2 px-4 rounded hover:bg-black hover:text-white" href="/meditations/page1">Details</Button>
-        </div>
+        <Card
+          cardClasses="bg-greysuit rounded-lg shadow-md p-4"
+          imageSrc=""
+          imageAlt="Meditation Class 1"
+          title="Getting Started"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          buttonLink="/meditations/page1"
+          buttonText="Details"
+        />
 
         <!-- Meditation Card 2 -->
-        <div class="bg-greysuit rounded-lg shadow-md p-4">
-          <img src="@/assets/images/meditation/meditationtwo.jpg" alt="Meditation Class 2" class="w-full h-32 object-cover rounded-md mb-3" />
-          <h2 class="text-lg font-semibold text-gray-800">Peaceful Meditation Environment</h2>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button class="mt-4 bg-tiber text-greysuit py-2 px-4 rounded hover:bg-black hover:text-white" href="/meditations/page2">Details</Button>
-        </div>  
+        <Card
+          cardClasses="bg-greysuit rounded-lg shadow-md p-4"
+          imageSrc=""
+          imageAlt="Meditation Class 2"
+          title="Meditation for Stress Relief"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          buttonLink="/meditations/page2"
+          buttonText="Details"
+        />
 
         <!-- Meditation Card 3 -->
-        <div class="bg-greysuit rounded-lg shadow-md p-4">
-          <img src="@/assets/images/meditation/meditationthree.jpg" alt="Meditation Class 2" class="w-full h-32 object-cover rounded-md mb-3" />
-          <h2 class="text-lg font-semibold text-gray-800">The Foundation</h2>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button class="mt-4 bg-tiber text-greysuit py-2 px-4 rounded hover:bg-black hover:text-white" href="/meditations/page3">Details</Button>
-        </div>
+        <Card
+          cardClasses="bg-greysuit rounded-lg shadow-md p-4"
+          imageSrc=""
+          imageAlt="Meditation Class 3"
+          title="Mindfulness Meditation"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          buttonLink="/meditations/page3"
+          buttonText="Details"
+        />
 
         <!-- Meditation Card 4 -->
-        <div class="bg-greysuit rounded-lg shadow-md p-4">
-          <img src="@/assets/images/meditation/meditationfour.jpg" alt="Meditation Class 2" class="w-full h-32 object-cover rounded-md mb-3" />
-          <h2 class="text-lg font-semibold text-gray-800">Phase 1: Mindfulness of Breath</h2>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button class="mt-4 bg-tiber text-greysuit py-2 px-4 rounded hover:bg-black hover:text-white" href="/meditations/page4">Details</Button>
-        </div>
+        <Card
+          cardClasses="bg-greysuit rounded-lg shadow-md p-4"
+          imageSrc=""
+          imageAlt="Meditation Class 4"
+          title="Meditation for Inner Peace"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          buttonLink="/meditations/page4"
+          buttonText="Details"
+        />
 
         <!-- Meditation Card 5 -->
-        <div class="bg-greysuit rounded-lg shadow-md p-4">
-          <img src="@/assets/images/meditation/meditationfive.jpg" alt="Meditation Class 2" class="w-full h-32 object-cover rounded-md mb-3" />
-          <h2 class="text-lg font-semibold text-gray-800">Phase 2: Body Scan</h2>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button class="mt-4 bg-tiber text-greysuit py-2 px-4 rounded hover:bg-black hover:text-white" href="/meditations/page5">Details</Button>
-        </div>
+        <Card
+          cardClasses="bg-greysuit rounded-lg shadow-md p-4"
+          imageSrc=""
+          imageAlt="Meditation Class 5"
+          title="Guided Meditation"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          buttonLink="/meditations/page5"
+          buttonText="Details"
+        />
 
         <!-- Meditation Card 6 -->
-        <div class="bg-greysuit rounded-lg shadow-md p-4">
-          <img src="@/assets/images/meditation/meditationsix.jpg" alt="Meditation Class 2" class="w-full h-32 object-cover rounded-md mb-3" />
-          <h2 class="text-lg font-semibold text-gray-800">Phase 3: Loving-Kindness Meditation</h2>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button class="mt-4 bg-tiber text-greysuit py-2 px-4 rounded hover:bg-black hover:text-white" href="/meditations/page6">Details</Button>
-        </div>
+        <Card
+          cardClasses="bg-greysuit rounded-lg shadow-md p-4"
+          imageSrc=""
+          imageAlt="Meditation Class 6"
+          title="Meditation for Relaxation"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          buttonLink="/meditations/page6"
+          buttonText="Details"
+        />
 
         <!-- Meditation Card 7 -->
-        <div class="bg-greysuit rounded-lg shadow-md p-4">
-          <img src="@/assets/images/meditation/meditationseven.jpg" alt="Meditation Class 2" class="w-full h-32 object-cover rounded-md mb-3" />
-          <h2 class="text-lg font-semibold text-gray-800">Phase 4: Visualization</h2>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button class="mt-4 bg-tiber text-greysuit py-2 px-4 rounded hover:bg-black hover:text-white" href="/meditations/page7">Details</Button>
-        </div>
+        <Card
+          cardClasses="bg-greysuit rounded-lg shadow-md p-4"
+          imageSrc=""
+          imageAlt="Meditation Class 7"
+          title="Deep Breathing"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          buttonLink="/meditations/page7"
+          buttonText="Details"
+        />
 
         <!-- Meditation Card 8 -->
-        <div class="bg-greysuit rounded-lg shadow-md p-4">
-          <img src="@/assets/images/meditation/meditationeight.jpg" alt="Meditation Class 2" class="w-full h-32 object-cover rounded-md mb-3" />
-          <h2 class="text-lg font-semibold text-gray-800">Wrapping Up Your Meditation Practice</h2>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button class="mt-4 bg-tiber text-greysuit py-2 px-4 rounded hover:bg-black hover:text-white" href="/meditations/page8">Details</Button>
-        </div>
-
+        <Card
+          cardClasses="bg-greysuit rounded-lg shadow-md p-4"
+          imageSrc=""
+          imageAlt="Meditation Class 8"
+          title="Meditation for Clarity"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          buttonLink="/meditations/page8"
+          buttonText="Details"
+        />
       </div>
     </div>
 
-    <Footer class="sticky-footer"  />
+    <Footer class="sticky-footer" />
   </div>
 </template>
-
-<script>
-
-</script>
 
 <style scoped>
 .sticky-footer {
